@@ -15,7 +15,7 @@ public class StudentMarks {
         studentMarksDetail.put("Zaw Lay", 67);
         studentMarksDetail.put("Mg Mya", 57);
 
-        // PRINT all students using Iterator
+
         System.out.println("Student Marks List");
         try {
             Iterator<Map.Entry<String, Integer>> iterator =
@@ -30,7 +30,7 @@ public class StudentMarks {
             System.out.println("Error while displaying student marks.");
         }
 
-        // FIND highest mark (safe but wrapped for practice)
+
         String topStudent = "";
         int highestMark = Integer.MIN_VALUE;
 

@@ -25,7 +25,7 @@ public class GuestList {
         Scanner sc = new Scanner(System.in);
         String nameSearch = "";
 
-        // INPUT (risky)
+
         try {
             nameSearch = sc.nextLine();
         } catch (Exception e) {
@@ -47,7 +47,7 @@ public class GuestList {
             System.out.println("Invalid Name");
         }
 
-        // REMOVE guest (safe with check)
+
         try {
             boolean removeName = guestNameList.remove("Mg Kyaw");
             System.out.println("Remove Guest Successful: " + removeName);

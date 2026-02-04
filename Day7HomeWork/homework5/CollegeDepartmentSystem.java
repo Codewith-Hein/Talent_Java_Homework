@@ -13,7 +13,7 @@ public class CollegeDepartmentSystem {
 
         Map<String, Set<String>> studentSubjects = getStringSetMap();
 
-        // PRINT students and subjects (safe)
+
         System.out.println("Students and their subjects:");
         try {
             for (String student : studentName) {
@@ -23,7 +23,7 @@ public class CollegeDepartmentSystem {
             System.out.println("Error while displaying students.");
         }
 
-        // ADD subject (risky part)
+
         try {
             studentSubjects.get("mg mg").add("Computer Science");
             System.out.println("\nSubject added for mg mg.");
@@ -31,7 +31,7 @@ public class CollegeDepartmentSystem {
             System.out.println("Student not found. Cannot add subject.");
         }
 
-        // REMOVE subject (risky part)
+
         try {
             boolean removed = studentSubjects.get("hla hla").remove("Math");
             if (removed) {
@@ -43,7 +43,6 @@ public class CollegeDepartmentSystem {
             System.out.println("Student not found. Cannot remove subject.");
         }
 
-        // COMBINE all unique subjects (safe)
         Set<String> allSubjects = new HashSet<>();
 
         try {

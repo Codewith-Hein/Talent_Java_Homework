@@ -17,7 +17,7 @@ public class People {
 
         System.out.println("Waiting List");
 
-        // Printing using Iterator (safe)
+
         try {
             Iterator<String> person = waitingList.iterator();
             while (person.hasNext()) {
@@ -27,7 +27,7 @@ public class People {
             System.out.println("Error while displaying waiting list.");
         }
 
-        // Remove first person (risky)
+
         try {
             String servedPerson = waitingList.removeFirst();
             System.out.println("Served: " + servedPerson);
@@ -35,7 +35,7 @@ public class People {
             System.out.println("No people in the waiting list to serve.");
         }
 
-        // Add new person (safe)
+
         waitingList.addLast("mya kyaw");
 
         System.out.println("Updated waiting list");
